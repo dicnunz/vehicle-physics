@@ -1,0 +1,366 @@
+{
+  "triangles": 160323,
+  "mesh_objects": 35,
+  "blender_bounds": {
+    "min": [
+      -1.0735000371932983,
+      -2.2972519397735596,
+      0.0
+    ],
+    "max": [
+      1.0735000371932983,
+      2.301042318344116,
+      1.4299999475479126
+    ]
+  },
+  "godot_dimensions": [
+    2.1470000743865967,
+    1.4299999475479126,
+    4.598294258117676
+  ],
+  "wheels": {
+    "Wheel_FL": {
+      "center_godot": [
+        -0.81,
+        0.335,
+        -1.34
+      ],
+      "radius": 0.335,
+      "width": 0.215
+    },
+    "Wheel_RL": {
+      "center_godot": [
+        -0.81,
+        0.335,
+        1.34
+      ],
+      "radius": 0.335,
+      "width": 0.215
+    },
+    "Wheel_FR": {
+      "center_godot": [
+        0.81,
+        0.335,
+        -1.34
+      ],
+      "radius": 0.335,
+      "width": 0.215
+    },
+    "Wheel_RR": {
+      "center_godot": [
+        0.81,
+        0.335,
+        1.34
+      ],
+      "radius": 0.335,
+      "width": 0.215
+    }
+  },
+  "structure": {
+    "name": "Sedan",
+    "type": "EMPTY",
+    "children": [
+      {
+        "name": "Body",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Brightwork",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Bumper_F",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Bumper_R",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Chassis",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Door_FL",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Door_FR",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Door_RL",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Door_RR",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Fender_F_L",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Fender_F_R",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Glass",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Headlights",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Hood",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Indicators",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Interior",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Mirrors",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Needle_RPM",
+        "type": "EMPTY",
+        "children": [
+          {
+            "name": "Needle_RPM_Mesh",
+            "type": "MESH",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Needle_Speed",
+        "type": "EMPTY",
+        "children": [
+          {
+            "name": "Needle_Speed_Mesh",
+            "type": "MESH",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Plates",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Quarter_R_L",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Quarter_R_R",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Roof",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "SteeringWheel",
+        "type": "EMPTY",
+        "children": [
+          {
+            "name": "SteeringWheel_Mesh",
+            "type": "MESH",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Taillights",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Trim",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Trunk",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Underbody_Drivetrain",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Underbody_Exhaust",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Underbody_Floor",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Underbody_Frame",
+        "type": "MESH",
+        "children": []
+      },
+      {
+        "name": "Wheel_FL",
+        "type": "EMPTY",
+        "children": [
+          {
+            "name": "Wheel_FL_Mesh",
+            "type": "MESH",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Wheel_FR",
+        "type": "EMPTY",
+        "children": [
+          {
+            "name": "Wheel_FR_Mesh",
+            "type": "MESH",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Wheel_RL",
+        "type": "EMPTY",
+        "children": [
+          {
+            "name": "Wheel_RL_Mesh",
+            "type": "MESH",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Wheel_RR",
+        "type": "EMPTY",
+        "children": [
+          {
+            "name": "Wheel_RR_Mesh",
+            "type": "MESH",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "orientation": "Godot: +X right, +Y up, -Z forward. All body mesh origins are zero with applied transforms. Wheel groups have local centered meshes.",
+  "cockpit_animation": {
+    "Needle_Speed": {
+      "axis_godot": [
+        0,
+        0,
+        1
+      ],
+      "rotation_range_degrees": [
+        0,
+        -270
+      ],
+      "reading_range_kph": [
+        0,
+        240
+      ]
+    },
+    "Needle_RPM": {
+      "axis_godot": [
+        0,
+        0,
+        1
+      ],
+      "rotation_range_degrees": [
+        0,
+        -270
+      ],
+      "reading_range_rpm": [
+        0,
+        8000
+      ]
+    },
+    "SteeringWheel": {
+      "axis_godot": [
+        0,
+        0.309016994,
+        0.951056516
+      ]
+    },
+    "exclude_from_body_deformation": [
+      "Needle_Speed",
+      "Needle_RPM",
+      "SteeringWheel"
+    ]
+  },
+  "headliner_shading": {
+    "mesh": "Interior",
+    "surface": 22,
+    "material": "Melange cabin headlining",
+    "method": "Angle-weighted normals at existing UV0 return-panel boundaries; AO-only duplicates welded within each panel.",
+    "changed_source_normal_records": 270,
+    "changed_welded_positions": 122,
+    "normal_accessor": 694,
+    "geometry_uvs_materials_and_all_other_source_bytes_preserved": true,
+    "tangent_basis": "Generated by the existing Godot import settings and verified on the real imported mesh.",
+    "source_asset_sha256": "dd0bc5172f6f405262476056c1ef7f6e03fd7b6745ae7218331806ab38d2e1b8"
+  },
+  "mirror_fit": {
+    "side": "left",
+    "face_size_mm": [
+      131,
+      87
+    ],
+    "corner_radius_mm": 31,
+    "housing_inset_mm": 8,
+    "coplanar_rim_width_mm": 7,
+    "rolled_seat_depth_mm": 3,
+    "replaced_original_offset_left_chrome_insert": true,
+    "existing_seat_material": "Textured black trim",
+    "optical_plane_godot_z_m": -0.3229999840259552,
+    "rear_transition_depth_mm": 39.000004529953,
+    "outer_bounds_center_attachment_and_optical_camera_preserved": true,
+    "source_asset_sha256": "2d32e6f75cc769339a21b920ec260bd70a07e0a1545f6c587d8448db9b4802e7"
+  },
+  "assembled_source_asset_sha256": "af388a701a49047b015b19df4dd850ff738515b1fd6d737d16d0255fcbae8920",
+  "rear_fascia_fit": {
+    "mesh": "Body",
+    "surface": 0,
+    "changed_position_vertices": 4,
+    "changed_adjacent_normals": 24,
+    "reviewed_candidate_sha256": "fc56f5ff32cffb7dedfb110de9b657026e8a4f9bce1ececf9aa3d9f1e53d3691",
+    "only_lateral_position_coordinates_changed": true,
+    "minimum_measured_quarter_panel_clearance_mm": 3.499985062531241
+  }
+}

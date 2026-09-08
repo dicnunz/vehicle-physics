@@ -1,0 +1,91 @@
+{
+  "license": "CC0 1.0",
+  "license_url": "https://polyhaven.com/license",
+  "usage": "Nine unmodified original 1K maps embedded in sedan.glb. Native cabin shader supplies neutral color, physical tiling, roughness ranges and restrained high-frequency normals.",
+  "sources": [
+    {
+      "asset": "Leather Red 02",
+      "author": "Rob Tuytel",
+      "source": "https://polyhaven.com/a/leather_red_02",
+      "license": "CC0 1.0",
+      "license_url": "https://polyhaven.com/license",
+      "physical_width_m": 0.6,
+      "files": [
+        {
+          "name": "leather_red_02_coll2_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_red_02/leather_red_02_coll2_1k.jpg",
+          "bytes": 985938,
+          "sha256": "97bffb0c51010a66abd078731ecbae89e91786be9539808a076b5d27995c0e97"
+        },
+        {
+          "name": "leather_red_02_nor_gl_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/leather_red_02/leather_red_02_nor_gl_1k.png",
+          "bytes": 2270810,
+          "sha256": "d151b48d5e0e21b4e9057c4624d921dcc5483682e62a77bb20f7bea18d92ddb7"
+        },
+        {
+          "name": "leather_red_02_arm_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/leather_red_02/leather_red_02_arm_1k.png",
+          "bytes": 4674241,
+          "sha256": "3214c19708203c0ecec8ca21db8a89653a4ae79c7b1955a8bfb2bea936293cba"
+        }
+      ]
+    },
+    {
+      "asset": "Leather Red 03",
+      "author": "Rob Tuytel",
+      "source": "https://polyhaven.com/a/leather_red_03",
+      "license": "CC0 1.0",
+      "license_url": "https://polyhaven.com/license",
+      "physical_width_m": 0.3,
+      "files": [
+        {
+          "name": "leather_red_03_coll2_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/leather_red_03/leather_red_03_coll2_1k.png",
+          "bytes": 6255681,
+          "sha256": "016eba1150b7a8fd685a005320c7470d9c457479d10806a3e3acf19637119d8a"
+        },
+        {
+          "name": "leather_red_03_nor_gl_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/leather_red_03/leather_red_03_nor_gl_1k.png",
+          "bytes": 1126865,
+          "sha256": "28d94e460ea1b27b9c96da58d2ba31c5785d330061ded2e8279f41d79d694bba"
+        },
+        {
+          "name": "leather_red_03_rough_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/leather_red_03/leather_red_03_rough_1k.png",
+          "bytes": 677690,
+          "sha256": "825234d73360d3c6b264f99b5452d8fffc6d04bf19388404508a27f7b42bad91"
+        }
+      ]
+    },
+    {
+      "asset": "Jogging Melange",
+      "author": "Rico Cilliers (processing); colormass (photography)",
+      "source": "https://polyhaven.com/a/jogging_melange",
+      "license": "CC0 1.0",
+      "license_url": "https://polyhaven.com/license",
+      "physical_width_m": 0.3,
+      "files": [
+        {
+          "name": "jogging_melange_diff_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/jogging_melange/jogging_melange_diff_1k.jpg",
+          "bytes": 827909,
+          "sha256": "d957b85205d1b639c50017f751865d117f510ca2d791b4c6c2b034d62a084d41"
+        },
+        {
+          "name": "jogging_melange_nor_gl_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/jogging_melange/jogging_melange_nor_gl_1k.png",
+          "bytes": 5681108,
+          "sha256": "d46d910a5d8c3bd3facf32528b8b28f413665996824f6a47850b1723abf19b14"
+        },
+        {
+          "name": "jogging_melange_arm_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/jogging_melange/jogging_melange_arm_1k.png",
+          "bytes": 5213312,
+          "sha256": "145d64b17fa85a95108d2cdeb07dc86f54b2d13284c67a34928da5a11206d3cb"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "file": "rocky_terrain_diff_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rocky_terrain/rocky_terrain_diff_2k.jpg",
+    "bytes": 3287952
+  },
+  {
+    "file": "rocky_terrain_nor_gl_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rocky_terrain/rocky_terrain_nor_gl_2k.jpg",
+    "bytes": 4149933
+  },
+  {
+    "file": "aerial_grass_rock_diff_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/aerial_grass_rock/aerial_grass_rock_diff_2k.jpg",
+    "bytes": 2624635
+  },
+  {
+    "file": "aerial_grass_rock_nor_gl_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/aerial_grass_rock/aerial_grass_rock_nor_gl_2k.jpg",
+    "bytes": 3799025
+  },
+  {
+    "file": "aerial_grass_rock_rough_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/aerial_grass_rock/aerial_grass_rock_rough_2k.jpg",
+    "bytes": 1495844
+  },
+  {
+    "file": "asphalt_01_diff_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_01/asphalt_01_diff_2k.jpg",
+    "bytes": 3118607
+  },
+  {
+    "file": "asphalt_01_nor_gl_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_01/asphalt_01_nor_gl_2k.jpg",
+    "bytes": 4845665
+  },
+  {
+    "file": "asphalt_01_rough_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_01/asphalt_01_rough_2k.jpg",
+    "bytes": 1599661
+  },
+  {
+    "file": "concrete_floor_02_diff_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_02/concrete_floor_02_diff_2k.jpg",
+    "bytes": 3310792,
+    "md5": "769c7bf30050cc57be848a67d5c20270"
+  },
+  {
+    "file": "concrete_floor_02_nor_gl_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_02/concrete_floor_02_nor_gl_2k.jpg",
+    "bytes": 935810,
+    "md5": "3cc9918473a0c3d5ecb10f0ddc7e218d"
+  },
+  {
+    "file": "concrete_floor_02_rough_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_02/concrete_floor_02_rough_2k.jpg",
+    "bytes": 1417673,
+    "md5": "63b266940d40787b56822b7882819711"
+  },
+  {
+    "file": "pine_sapling_medium_bark_diff_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pine_sapling_medium/pine_sapling_medium_bark_diff_1k.jpg",
+    "bytes": 725265,
+    "md5": "7d3a558ed614c7e75594c7be3bf80311"
+  },
+  {
+    "file": "pine_sapling_medium_bark_nor_gl_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pine_sapling_medium/pine_sapling_medium_bark_nor_gl_1k.jpg",
+    "bytes": 1016849,
+    "md5": "bb6e3a6eea777d992cef48fabfdc538c"
+  },
+  {
+    "file": "pine_sapling_medium_bark_rough_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pine_sapling_medium/pine_sapling_medium_bark_rough_1k.jpg",
+    "bytes": 611111,
+    "md5": "1fb09885fde634d377e1d4f2a8960593"
+  },
+  {
+    "file": "pine_sapling_medium_twig_alpha_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pine_sapling_medium/pine_sapling_medium_twig_alpha_1k.jpg",
+    "bytes": 195206,
+    "md5": "e9a69633f4c1d9b8a460c3f05fc8d75e"
+  },
+  {
+    "file": "pine_sapling_medium_twig_diff_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pine_sapling_medium/pine_sapling_medium_twig_diff_1k.jpg",
+    "bytes": 510932,
+    "md5": "b6e5f4e8c228c275e5ff75cb165c2e1f"
+  },
+  {
+    "file": "pine_sapling_medium_twig_nor_gl_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pine_sapling_medium/pine_sapling_medium_twig_nor_gl_1k.jpg",
+    "bytes": 797935,
+    "md5": "972d28f52f07ea271792b5bfbb8a3286"
+  },
+  {
+    "file": "pine_sapling_medium_twig_rough_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pine_sapling_medium/pine_sapling_medium_twig_rough_1k.jpg",
+    "bytes": 391582,
+    "md5": "806f4a968323b62c47bdabac55e4756f"
+  }
+]

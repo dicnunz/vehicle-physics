@@ -1,0 +1,6 @@
+.godot/
+.DS_Store
+*.app/
+*.pck
+*.zip
+qa-output/
