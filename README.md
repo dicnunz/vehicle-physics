@@ -1,8 +1,10 @@
-# Vehicle Physics
+# Olley
 
 A Godot driving sandbox with custom suspension, tire forces, impact deformation, and cockpit mirrors. Drive a sedan through ramps, bumps, and crash barriers, or run scripted scenarios that export telemetry.
 
 ![Proving Ground gameplay](docs/gameplay.png)
+
+Named for Maurice Olley’s [independent suspension research](https://saemobilus.sae.org/papers/independent-wheel-suspension-whys-wherefores-340080). The UI borrows compact scales, segmented readouts and warning hierarchy from physical vehicle instrumentation.
 
 ## Run
 
@@ -13,7 +15,7 @@ godot --headless --editor --path . --import
 godot --path .
 ```
 
-A self-contained Apple Silicon build is available in [Releases](https://github.com/dicnunz/vehicle-physics/releases). It requires macOS 13 or later and is ad hoc signed, without Apple notarization.
+A self-contained Apple Silicon build is available in [Releases](https://github.com/dicnunz/vehicle-physics/releases/latest). It requires macOS 13 or later and is ad hoc signed, without Apple notarization.
 
 | Control | Action |
 | --- | --- |

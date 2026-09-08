@@ -489,6 +489,11 @@ func set_paused(value: bool) -> void:
 	paused=value
 	get_tree().paused=value
 	pause_panel.visible=value
+	hud.visible=not value
+	if value:
+		var resume_button := pause_panel.find_children("*", "Button", true, false)
+		if not resume_button.is_empty():
+			resume_button[0].grab_focus()
 	vehicle.process_mode=Node.PROCESS_MODE_PAUSABLE
 
 func _pause_menu(layer: CanvasLayer) -> void:
@@ -505,17 +510,52 @@ func _pause_menu(layer: CanvasLayer) -> void:
 	pause_panel.add_child(center)
 	var column: VBoxContainer=VBoxContainer.new()
 	column.add_theme_constant_override("separation",12)
-	column.custom_minimum_size.x=240
-	center.add_child(column)
+	column.custom_minimum_size.x=340
+	var menu_panel := PanelContainer.new()
+	var menu_style := StyleBoxFlat.new()
+	menu_style.bg_color = Color("141c19")
+	menu_style.content_margin_left = 30
+	menu_style.content_margin_right = 30
+	menu_style.content_margin_top = 28
+	menu_style.content_margin_bottom = 28
+	menu_panel.add_theme_stylebox_override("panel", menu_style)
+	center.add_child(menu_panel)
+	menu_panel.add_child(column)
 	var title: Label=Label.new()
-	title.text="PAUSED"
+	title.text="OLLEY"
 	title.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
-	title.add_theme_font_size_override("font_size",22)
+	title.add_theme_font_size_override("font_size",34)
+	title.add_theme_color_override("font_color",Color("f1f0e8"))
 	column.add_child(title)
+	var subtitle := Label.new()
+	subtitle.text = "VEHICLE DYNAMICS"
+	subtitle.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	subtitle.add_theme_font_size_override("font_size", 11)
+	subtitle.add_theme_color_override("font_color", Color("aaafa9"))
+	column.add_child(subtitle)
+	var spacer := Control.new()
+	spacer.custom_minimum_size.y = 15
+	column.add_child(spacer)
 	for label: String in ["Resume","Reset vehicle","Quit"]:
 		var button: Button=Button.new()
 		button.text=label
-		button.custom_minimum_size.y=42
+		button.custom_minimum_size.y=48
+		var normal := StyleBoxFlat.new()
+		normal.bg_color = Color("202a27")
+		normal.content_margin_left = 18
+		normal.content_margin_right = 18
+		var hover := normal.duplicate() as StyleBoxFlat
+		hover.bg_color = Color("35413a")
+		var focus := StyleBoxFlat.new()
+		focus.bg_color = Color.TRANSPARENT
+		focus.border_color = Color("e8b65b")
+		focus.set_border_width_all(2)
+		button.add_theme_stylebox_override("normal", normal)
+		button.add_theme_stylebox_override("hover", hover)
+		button.add_theme_stylebox_override("focus", focus)
+		button.add_theme_stylebox_override("pressed", hover)
+		button.add_theme_font_size_override("font_size", 16)
+		button.add_theme_color_override("font_color", Color("f1f0e8"))
 		column.add_child(button)
 		button.pressed.connect(func():
 			if label=="Quit":
@@ -526,6 +566,16 @@ func _pause_menu(layer: CanvasLayer) -> void:
 				set_paused(false)
 			else:
 				set_paused(false))
+
+	var controls := Label.new()
+	controls.text = "WASD   Drive / reverse
+Space   Handbrake
+R   Reset     Tab   Camera
+J   Slow motion     Esc   Resume"
+	controls.add_theme_font_size_override("font_size", 13)
+	controls.add_theme_color_override("font_color", Color("aaafa9"))
+	controls.add_theme_constant_override("line_spacing", 9)
+	column.add_child(controls)
 
 func _skids(dt: float) -> void:
 	skid_timer+=dt
