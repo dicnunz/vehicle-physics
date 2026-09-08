@@ -2,7 +2,7 @@
 
 A Godot driving sandbox with custom suspension, tire forces, impact deformation, and cockpit mirrors. Drive a sedan through ramps, bumps, and crash barriers, or run scripted scenarios that export telemetry.
 
-![Proving Ground gameplay](docs/gameplay.png)
+![Olley gameplay](docs/gameplay.png)
 
 Named for Maurice Olley’s [independent suspension research](https://saemobilus.sae.org/papers/independent-wheel-suspension-whys-wherefores-340080). The UI borrows compact scales, segmented readouts and warning hierarchy from physical vehicle instrumentation.
 

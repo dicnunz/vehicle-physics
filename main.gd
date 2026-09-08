@@ -26,7 +26,7 @@ var presentation_materials_ready: bool=false
 
 func _ready() -> void:
 	if DisplayServer.get_name()!="headless":
-		RenderingServer.frame_post_draw.connect(func(): DisplayServer.window_set_title("Proving Ground"),CONNECT_ONE_SHOT)
+		RenderingServer.frame_post_draw.connect(func(): DisplayServer.window_set_title("Olley"),CONNECT_ONE_SHOT)
 	process_mode=Node.PROCESS_MODE_ALWAYS
 	Engine.max_fps=0
 	get_window().size_changed.connect(_configure_render_resolution)
