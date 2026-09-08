@@ -1,4 +1,4 @@
-# Proving Ground
+# Skidpad
 
 A Godot driving sandbox with custom suspension, tire forces, impact deformation, and cockpit mirrors. Drive a sedan through ramps, bumps, and crash barriers, or run scripted scenarios that export telemetry.
 
@@ -13,7 +13,7 @@ godot --headless --editor --path . --import
 godot --path .
 ```
 
-A self-contained Apple Silicon build is available in [Releases](https://github.com/dicnunz/proving-ground/releases). It requires macOS 13 or later and is ad hoc signed, without Apple notarization.
+A self-contained Apple Silicon build is available in [Releases](https://github.com/dicnunz/skidpad/releases). It requires macOS 13 or later and is ad hoc signed, without Apple notarization.
 
 | Control | Action |
 | --- | --- |
