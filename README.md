@@ -4,6 +4,8 @@ A Godot driving sandbox with custom suspension, tire forces, impact deformation,
 
 ![Vehicle Physics gameplay](docs/gameplay.png)
 
+[Inspect recorded crash telemetry](https://dicnunz.github.io/demos/vehicle-physics/)
+
 ## Run
 
 Tested with **Godot 4.7.1**, Forward+ rendering, and Jolt Physics on Apple Silicon macOS. Open `project.godot` in Godot and press **F6** on `main.tscn`, or run:
