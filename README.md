@@ -15,7 +15,7 @@ godot --headless --editor --path . --import
 godot --path .
 ```
 
-A self-contained Apple Silicon build is available in [Releases](https://github.com/dicnunz/vehicle-physics/releases/latest). It requires macOS 13 or later and is ad hoc signed, without Apple notarization.
+A self-contained Apple Silicon build is available in [Releases](https://github.com/dicnunz/vehicle-physics/releases/tag/v0.21.0). It requires macOS 13 or later and is ad hoc signed, without Apple notarization.
 
 | Control | Action |
 | --- | --- |

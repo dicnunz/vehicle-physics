@@ -26,7 +26,7 @@ var presentation_materials_ready: bool=false
 
 func _ready() -> void:
 	if DisplayServer.get_name()!="headless":
-		RenderingServer.frame_post_draw.connect(func(): DisplayServer.window_set_title("Olley"),CONNECT_ONE_SHOT)
+		RenderingServer.frame_post_draw.connect(func(): DisplayServer.window_set_title("Vehicle Physics"),CONNECT_ONE_SHOT)
 	process_mode=Node.PROCESS_MODE_ALWAYS
 	Engine.max_fps=0
 	get_window().size_changed.connect(_configure_render_resolution)
@@ -502,7 +502,7 @@ func _pause_menu(layer: CanvasLayer) -> void:
 	pause_panel.visible=false
 	layer.add_child(pause_panel)
 	var shade: ColorRect=ColorRect.new()
-	shade.color=Color(0.015,0.025,0.035,0.68)
+	shade.color=Color(0.015,0.025,0.035,0.40)
 	shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	pause_panel.add_child(shade)
 	var center: CenterContainer=CenterContainer.new()
@@ -510,10 +510,19 @@ func _pause_menu(layer: CanvasLayer) -> void:
 	pause_panel.add_child(center)
 	var column: VBoxContainer=VBoxContainer.new()
 	column.add_theme_constant_override("separation",12)
-	column.custom_minimum_size.x=340
+	column.custom_minimum_size.x=420
 	var menu_panel := PanelContainer.new()
 	var menu_style := StyleBoxFlat.new()
-	menu_style.bg_color = Color("141c19")
+	menu_style.bg_color = Color(0.09,0.12,0.16,0.96)
+	menu_style.set_corner_radius_all(16)
+	menu_style.set_border_width_all(1)
+	menu_style.border_color = Color("4a5664")
+	menu_style.shadow_color = Color(0,0,0,0.28)
+	menu_style.shadow_size = 22
+	var interface_font := SystemFont.new()
+	interface_font.font_names = PackedStringArray(["Helvetica Neue", "Arial"])
+	menu_panel.theme = Theme.new()
+	menu_panel.theme.default_font = interface_font
 	menu_style.content_margin_left = 30
 	menu_style.content_margin_right = 30
 	menu_style.content_margin_top = 28
@@ -522,15 +531,15 @@ func _pause_menu(layer: CanvasLayer) -> void:
 	center.add_child(menu_panel)
 	menu_panel.add_child(column)
 	var title: Label=Label.new()
-	title.text="OLLEY"
-	title.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	title.text="Vehicle Physics"
+	title.horizontal_alignment=HORIZONTAL_ALIGNMENT_LEFT
 	title.add_theme_font_size_override("font_size",34)
 	title.add_theme_color_override("font_color",Color("f1f0e8"))
 	column.add_child(title)
 	var subtitle := Label.new()
-	subtitle.text = "VEHICLE DYNAMICS"
-	subtitle.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	subtitle.add_theme_font_size_override("font_size", 11)
+	subtitle.text = "Paused"
+	subtitle.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+	subtitle.add_theme_font_size_override("font_size", 15)
 	subtitle.add_theme_color_override("font_color", Color("aaafa9"))
 	column.add_child(subtitle)
 	var spacer := Control.new()
@@ -541,14 +550,15 @@ func _pause_menu(layer: CanvasLayer) -> void:
 		button.text=label
 		button.custom_minimum_size.y=48
 		var normal := StyleBoxFlat.new()
-		normal.bg_color = Color("202a27")
+		normal.bg_color = Color("3476ae") if label == "Resume" else Color("303a45")
+		normal.set_corner_radius_all(8)
 		normal.content_margin_left = 18
 		normal.content_margin_right = 18
 		var hover := normal.duplicate() as StyleBoxFlat
-		hover.bg_color = Color("35413a")
+		hover.bg_color = Color("4588c1") if label == "Resume" else Color("414f5f")
 		var focus := StyleBoxFlat.new()
 		focus.bg_color = Color.TRANSPARENT
-		focus.border_color = Color("e8b65b")
+		focus.border_color = Color("99c9f4")
 		focus.set_border_width_all(2)
 		button.add_theme_stylebox_override("normal", normal)
 		button.add_theme_stylebox_override("hover", hover)
@@ -567,15 +577,18 @@ func _pause_menu(layer: CanvasLayer) -> void:
 			else:
 				set_paused(false))
 
-	var controls := Label.new()
-	controls.text = "WASD   Drive / reverse
-Space   Handbrake
-R   Reset     Tab   Camera
-J   Slow motion     Esc   Resume"
-	controls.add_theme_font_size_override("font_size", 13)
-	controls.add_theme_color_override("font_color", Color("aaafa9"))
-	controls.add_theme_constant_override("line_spacing", 9)
+	var controls := GridContainer.new()
+	controls.columns = 2
+	controls.add_theme_constant_override("h_separation", 38)
+	controls.add_theme_constant_override("v_separation", 10)
 	column.add_child(controls)
+	for pair in [["WASD / arrows", "Drive / reverse"], ["Space", "Handbrake"], ["Tab / C", "Camera"], ["R", "Reset vehicle"], ["J", "Slow motion"], ["Esc", "Resume"]]:
+		for i in range(2):
+			var text := Label.new()
+			text.text = pair[i]
+			text.add_theme_font_size_override("font_size", 15)
+			text.add_theme_color_override("font_color", Color("d7e0e9") if i == 0 else Color("a8b6c4"))
+			controls.add_child(text)
 
 func _skids(dt: float) -> void:
 	skid_timer+=dt

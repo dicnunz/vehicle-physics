@@ -4,3 +4,5 @@
 *.pck
 *.zip
 qa-output/
+.build/
+__pycache__/
